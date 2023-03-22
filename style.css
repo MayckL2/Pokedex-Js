@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: linear-gradient(aqua, white);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+main {
+  margin: 20px;
+  padding: 15px;
+  background-color: rgba(255, 0, 0, 0.726);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+  border: 10px outset gray;
+}
+@media (max-width: 500px) {
+  main {
+    width: 80%;
+  }
+}
+main input {
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: solid transparent;
+  transition: all 0.5s;
+}
+main input:focus {
+  outline: none;
+  border-radius: 0px;
+  background-color: transparent;
+  color: white;
+  border: solid white;
+}
+main #pokemon {
+  position: relative;
+  width: 100%;
+}
+main #pokemon #ambiente {
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+}
+main #pokemon #imgPokemon {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 50%;
+  height: 70%;
+  z-index: 1;
+  transition: all 0.5s;
+}
+main #pokemon #imgPokemon:hover {
+  scale: 1.5;
+}
+main #pokemon p {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+}
+main #info {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px 20px;
+}
+@media (max-width: 400px) {
+  main #info {
+    grid-template-columns: auto;
+  }
+}
+main #info p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+main #btns {
+  display: flex;
+  align-items: center;
+  gap: 0 50px;
+}
+main #btns button {
+  padding: 5px 20px;
+  color: white;
+  background-color: gray;
+  border: white solid;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+main #btns button:hover {
+  opacity: 0.5;
+  border-radius: 0px;
+}/*# sourceMappingURL=style.css.map */

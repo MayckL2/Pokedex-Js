@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Mayck Luciano</title>
+    <meta name="description" content="Site com uma pokedex do anime pokemon">
+    <link rel="icon" href="img/pokedex.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <input type="text" id="pesquisa" placeholder="Nome do Pokemon" required autofocus autocomplete="off">
+        </form>
+
+        <div id="pokemon">
+            <img src="img/cave.png" id="ambiente" alt="ambiente">
+            <img src="" id="imgPokemon" alt="pokemon">
+            <p><span id="numero">1</span> - <span id="nome">Pokemon</span></p>
+        </div>
+
+        <div id="info">
+            <p>Tipo: <span id="tipo"></span></p>
+            <p>Status: <span id="stats"></span></p>
+            <p>Altura: <span id="altura"></span></p>
+            <p>Peso: <span id="largura"></span></p>
+        </div>
+
+        <div id="btns">
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
