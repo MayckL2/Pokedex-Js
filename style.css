@@ -12,8 +12,8 @@ body {
 
 main {
   margin: 20px auto;
-  padding: 15px;
-  background-color: rgba(255, 0, 0, 0.726);
+  padding: 50px 15px;
+  background-image: linear-gradient(red, darkred);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -21,11 +21,49 @@ main {
   gap: 20px;
   width: 400px;
   border: 10px outset gray;
+  position: relative;
 }
 @media (max-width: 500px) {
   main {
     width: 80%;
   }
+}
+main #led {
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  padding: 5px;
+}
+main #led * {
+  border-radius: 50%;
+  border: 4px solid white;
+}
+@keyframes pisca {
+  from {
+    box-shadow: 1px 1px 20px 10px aqua;
+  }
+  to {
+    box-shadow: 1px 1px 1px aqua;
+  }
+}
+main #led .blue {
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  transition: all 0.5s;
+}
+main #led .red, main #led .yellow, main #led .green {
+  width: 15px;
+  height: 15px;
+}
+main #led .red {
+  background-color: red;
+}
+main #led .yellow {
+  background-color: yellow;
+}
+main #led .green {
+  background-color: greenyellow;
 }
 main input {
   border-radius: 20px;
@@ -57,6 +95,8 @@ main #pokemon #imgPokemon {
   height: 70%;
   z-index: 1;
   transition: all 0.5s;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main #pokemon #imgPokemon:hover {
   scale: 1.5;

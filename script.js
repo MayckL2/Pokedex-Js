@@ -6,6 +6,7 @@ let pokemonStats = document.querySelector('#stats')
 let pokemonAltura = document.querySelector('#altura')
 let pokemonLargura = document.querySelector('#largura')
 let ambiente = document.querySelector("#ambiente")
+let led = document.querySelector("#led .blue")
 
 let form = document.querySelector('form')
 let input = document.querySelector('#pesquisa')
@@ -51,10 +52,12 @@ const renderPokemon = async (pokemon) => {
         pokemonAltura.innerHTML = (data.height / 10) + ' m'
         input.value = ''
         searchPokemon = data.id
+        led.style.animation= 'pisca 1s infinite'
     } else {
         pokemonImage.style.display = 'none'
         pokemonName.innerHTML = 'Not found :c'
         pokemonNumber.innerHTML = ''
+        led.style.animation= ''
     }
 }
 
