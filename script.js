@@ -62,52 +62,52 @@ const renderPokemon = async (pokemon) => {
 function mudaAmbiente(tipo) {
     switch (tipo) {
         case 'normal':
-            ambiente.src = '/img/route.png'
+            ambiente.src = 'img/route.png'
             break
         case 'fighting':
-            ambiente.src = '/img/city.png'
+            ambiente.src = 'img/city.png'
             break
         case 'dragon':
-            ambiente.src = '/img/ice.png'
+            ambiente.src = 'img/ice.png'
             break
         case 'ghost':
-            ambiente.src = '/img/cave.png'
+            ambiente.src = 'img/cave.png'
             break
         case 'ground':
-            ambiente.src = '/img/desert.png'
+            ambiente.src = 'img/desert.png'
             break
         case 'poison':
-            ambiente.src = '/img/mug.png'
+            ambiente.src = 'img/mug.png'
             break
         case 'grass':
-            ambiente.src = '/img/grass.png'
+            ambiente.src = 'img/grass.png'
             break
         case 'rock':
-            ambiente.src = '/img/caveRocks.png'
+            ambiente.src = 'img/caveRocks.png'
             break
         case 'steel':
-            ambiente.src = '/img/cave.png'
+            ambiente.src = 'img/cave.png'
             break
         case 'psychic':
-            ambiente.src = '/img/city.png'
+            ambiente.src = 'img/city.png'
             break
         case 'water':
-            ambiente.src = '/img/sea.png'
+            ambiente.src = 'img/sea.png'
             break
         case 'electric':
-            ambiente.src = '/img/grass.png'
+            ambiente.src = 'img/grass.png'
             break
         case 'dark':
-            ambiente.src = '/img/cave.png'
+            ambiente.src = 'img/cave.png'
             break
         case 'fire':
-            ambiente.src = '/img/vulcano.png'
+            ambiente.src = 'img/vulcano.png'
             break
         case 'bug':
-            ambiente.src = '/img/mug.png'
+            ambiente.src = 'img/mug.png'
             break
         case 'fairy':
-            ambiente.src = '/img/city.png'
+            ambiente.src = 'img/city.png'
             break
 
     }
