@@ -136,4 +136,5 @@ buttonNext.addEventListener('click', () => {
     }
 })
 
-renderPokemon(1)
+// renderiza o primeiro pokemon quando carregar a pagina
+document.querySelector("body").addEventListener("load", renderPokemon(1))
